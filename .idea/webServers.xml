@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9b1243c2-6b08-4097-af13-df4255d2863b" name="Deployment" url="http://trex-sandwich.com">
+        <fileTransfer rootFolder="/sr235" accessType="SFTP" sshConfigId="b13d4d70-f06e-46bb-95bd-3aefb2b9781f" sshConfig="sr235@trex-sandwich.com:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

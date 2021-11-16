@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="sr235@db.trex-sandwich.com" uuid="2a8a151f-e26e-4d01-848a-6e6089713e73">
+      <driver-ref>mariadb</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mariadb://db.trex-sandwich.com:3306/sr235</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="alpaca@db.trex-sandwich.com" uuid="2411d542-5299-4fa4-95ed-5994730d4a20">
+      <driver-ref>mariadb</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mariadb://db.trex-sandwich.com:3306/alpaca</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="sm561@db.trex-sandwich.com" uuid="822be7b2-79b9-4314-a011-2c0a17e250f8">
+      <driver-ref>mariadb</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mariadb://db.trex-sandwich.com:3306/sm561</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="yw460@db.trex-sandwich.com" uuid="40169466-22a7-4794-92a0-a61479348a21">
+      <driver-ref>mariadb</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mariadb://db.trex-sandwich.com:3306/yw460</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="kg105@db.trex-sandwich.com" uuid="3b0cad81-96a8-4ed5-b232-cac691db61dc">
+      <driver-ref>mariadb</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mariadb://db.trex-sandwich.com:3306/kg105</jdbc-url>
+    </data-source>
+  </component>
+</project>

@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="java-squad-blog">
+    <output-path>$PROJECT_DIR$/out/artifacts/java_squad_blog</output-path>
+    <root id="archive" name="java-squad-blog.war">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="group-project-code" />
+          <element id="library" level="application" name="ckeditor" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="group-project-code/web/Web" />
+    </root>
+  </artifact>
+</component>

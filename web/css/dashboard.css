@@ -1,0 +1,67 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+th,td{
+    padding: 20px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+thead{
+    text-align: center;
+    color: whitesmoke;
+}
+
+a{
+    color: whitesmoke;
+}
+
+.edit{
+    color: #f6f3f3;
+    background: transparent;
+    position: absolute;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    outline: none;
+    width: 25px;
+    border-radius: 20px;
+    height: 25px;
+    margin: -11px;
+}
+
+.delete{
+    color: #f6f3f3;
+    background: transparent;
+    position: absolute;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    outline: none;
+    width: 25px;
+    border-radius: 20px;
+    height: 25px;
+    margin: -11px;
+}
+
+.edit:hover {
+    background: #fff;
+    border: 1px solid #006669;
+    color: #6cc628;;
+}
+.delete:hover {
+    background: #fff;
+    border: 1px solid #006669;
+    color: #c62828;
+}
+
+
+.buttons i{
+    color: whitesmoke;
+}

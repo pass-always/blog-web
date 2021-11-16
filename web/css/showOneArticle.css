@@ -1,0 +1,29 @@
+#container {
+    margin-top: 5%;
+    margin-right: 0;
+    text-align: center;
+    opacity: 0.8;
+}
+
+p {
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+#one-head2 {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: -30px;
+}
+
+#one-head{
+    font-size: 2em;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Lora', sans-serif;
+    color: #fff;
+    width: 100%;
+}

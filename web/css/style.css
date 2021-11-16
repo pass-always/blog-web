@@ -1,0 +1,372 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+*{
+    box-sizing: border-box;
+}
+
+
+html {
+    background: url("../images/3.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    font-family: 'Lora', serif;
+}
+
+h1, h2, h5, h6{
+    font-family: 'Lora', serif;
+    color: #ffffff;
+    margin: 5px;
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.article-area {
+    background: rgba(255, 0, 0, 0);
+    padding: 15px 15px 15px 7px;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 10px auto 10px auto;
+    width: 95%;
+    color: white;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.btn-btn{
+    padding: .5rem 1rem;
+    background: #006669;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.btn-btn:hover{
+    color: white !important;
+    background: #00292a;
+}
+
+header{
+    background: #008489;
+    height: 55px;
+    margin-top: -20px;
+}
+
+header *{
+    color: white;
+}
+
+header.logo{
+    float: left;
+    height: inherit;
+    margin-left: 2em;
+}
+header .logo-text{
+    margin: 20px;
+    font-family: 'Candal', serif;
+}
+
+header .logo-text span{
+    color: #03e7ef;
+    padding-left: 20px;
+}
+header ul{
+    float: right;
+    margin-top:-61px;
+    padding: 0;
+    list-style: none;
+    height: inherit;
+    width: inherit;
+}
+
+header ul li{
+    float: left;
+    position: relative;
+}
+
+header ul li a{
+    display: block;
+    padding: 12px;
+    font-size: 1.1em;
+    text-decoration: none;
+    width: 135px;
+}
+
+header ul li a:hover{
+    background: #012e2f;
+    transition: 0.5s;
+    height: 55px;
+}
+
+header ul li ul{
+    position: absolute;
+    top: 113px;
+    width: 135px;
+    display: none;
+    z-index: 88888;
+}
+
+header ul li:hover ul{
+    display: block;
+}
+header ul li ul li a{
+    padding: 10px;
+    background: white;
+    color: #444;
+}
+
+
+header ul li ul li a.logout{
+    color: red;
+}
+
+header ul li ul li a:hover{
+    background: #b9baba;
+}
+header .menu-toggle{
+    display: none;
+}
+
+.btn {
+    width: 100%;
+    background: none;
+    border: 2px solid #008388;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 12px 0;
+    border-radius: 20px;
+    font-family: 'Lora', serif;
+}
+
+#moreText{
+    display: none;
+}
+
+/*-------------Post Slider--------------*/
+
+.page-wrapper a:hover{
+    color: #006669;
+}
+.post-slider{
+    position: relative;
+}
+.post-slider .slider-title{
+    text-align: center;
+    margin: 20px auto;
+}
+
+.post-slider .next{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 2em;
+    color: #006669;
+    cursor: pointer;
+}
+.post-slider .prev{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 2em;
+    color: #006669;
+    cursor: pointer;
+}
+.post-slider .post-wrapper{
+    width: 84%;
+    height: 350px;
+    margin: auto;
+    overflow: hidden;
+    padding: 11px 0px 10px 0px;
+
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Lora', sans-serif;
+    color: #fff;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.post-slider .post-wrapper .post {
+    width: 300px;
+    height: 330px;
+    margin: 0 10px;
+    display: inline-block;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
+}
+.post-slider .post-wrapper .post .post-info {
+    height: 130px;
+    padding: 0 5px;
+}
+.post-slider .post-wrapper .post .slider-image {
+    width: 100%;
+    height: 200px;
+}
+/*---------------------CONTENT------------------------*/
+.content{
+    width: 90%;
+    margin: 30px auto;
+}
+
+.content .posts{
+    width: 70%;
+    float: left;
+}
+
+.content .posts .holder{
+    width: 90%;
+    height: 270px;
+    margin: 20px auto;
+    border-radius: 8px;
+    background: #f6f3f3;
+    position: relative;
+    display: none;
+}
+
+.content .posts .holder .read-more{
+    position: absolute;
+    bottom:10px;
+    right: 10px;
+    border: 1px solid #006669;
+    background: transparent;
+    border-radius: 8px;
+    color: #006669 !important;
+}
+
+.content .posts .holder .read-more:hover {
+    background: #006669;
+    color: white !important;
+    transition:.25s;
+}
+
+.content .posts .holder .post-image{
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+
+.content .posts .holder .post-preview{
+    padding: 10px;
+    float: left;
+}
+
+.content .posts .recent-post-title{
+    margin: 20px;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px){
+    header{
+        position: relative;
+    }
+    header ul{
+        width: 100%;
+        background: #0E94A0;
+        max-height: 0px;
+        overflow: hidden;
+    }
+    .showing{
+        max-height: 100em;
+    }
+    header ul li{
+        width: 100%;
+    }
+
+    header ul li ul{
+        position: static;
+        display: block;
+        width: 100%;
+    }
+    header ul li ul li a{
+        padding: 10px;
+        background: #0E94A0;
+        color: white;
+        padding-left: 50px;;
+    }
+
+    header ul li ul li a:hover{
+        background: #006669;
+    }
+    header ul li ul li a.logout{
+        color: red;
+    }
+
+    header.menu-toggle{
+        display: block;
+        right: 20px;
+        top: 10px;
+        font-size: 1.5em;
+        border: 1px solid red;
+        position: absolute;
+    }
+
+    header.logo{
+        margin-left: .5em;
+    }
+
+    .content .posts{
+        width: 100%;
+        float: left;
+    }
+
+    .btn {
+        width: 67%;
+        background: none;
+        border: 2px solid #008388;
+        color: white;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        margin: 10px 10pc;
+        border-radius: 20px;
+        font-family: 'Lora', Serif;
+    }
+}
+
+@media only screen and (max-width: 2560px){
+    body{
+        padding: 0;
+        margin: 0;
+        width: auto;
+    }
+
+    .content .posts .recent-post-title {
+        margin: 60px;
+    }
+
+    .btn {
+        width: 85%;
+        background: none;
+        border: 2px solid #008388;
+        color: white;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 20px;
+        font-family: 'Lora', Serif;
+    }
+
+}

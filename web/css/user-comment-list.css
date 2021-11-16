@@ -1,0 +1,124 @@
+
+div.comments{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+div#comment-container{
+    border: 1px solid black;
+}
+
+#comment-textarea{
+    display: none;
+}
+
+.comment-title{
+    font-weight: bold;
+    font-size: 30px;
+    width: fit-content;
+    color: white;
+}
+
+.comment-time{
+    font-style: italic;
+    font-size: 14px;
+    color: white;
+}
+
+div.comment-content>p {
+    color: white;
+    font-size: 22px;
+    margin: 0 10px 0 10px;
+}
+
+/* The Modal (background) */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    /*padding-top: 30%; !* Location of the box *!*/
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.popup-box {
+    margin: auto;
+    border: 3px solid white;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #022123;
+    padding: 15px 25px 20px 25px;
+    color: white;
+}
+
+#delete-comment-form{
+    display: inline-block;
+}
+
+#delete-alert-container{
+    width: 50%;
+    text-align: center;
+    /* After merging*/
+    margin: 7% auto auto auto;
+}
+
+/* CSS After merging*/
+
+div#commentArea{
+    text-align: left;
+}
+
+p.in-comment,a.in-comment {
+    margin: 10px;
+}
+
+div.comments{
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 10px auto 10px auto;
+}
+
+div.delete-button{
+    text-align: right;
+}
+
+input.in-comment, input.delete-alert-button{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px;
+    background: rgba(255, 0, 0, 0);
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family: Lora, serif;
+}
+input.in-comment:hover, input.delete-alert-button:hover{
+    background: #055c66;
+}
+
+input.delete-alert-button{
+    font-size: 20px;
+    width: 100px;
+}
+
+p#delete-alert-message{
+    font-size: 25px;
+}
+
+p#no-user-comment, p#loading-comment{
+    font-family: 'Lora', serif;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}

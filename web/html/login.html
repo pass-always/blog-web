@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+
+    <!--Font--->
+    <script src="https://kit.fontawesome.com/c5aba5c557.js" crossorigin="anonymous"></script>
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+<nav role='navigation' id="mainnav">
+    <br><br><br>
+    <ul class="gap">
+        <li><a href="main.html">MAIN</a></li>
+        <li><a href="#?">ABOUT</a></li>
+        <li><a href="posts.html">POSTS</a></li>
+        <li><a href="register.html">REGISTER</a></li>
+    </ul>
+</nav>
+
+<div class="hamb">
+    <a href="#"><i class="fa fa-bars"></i></a>
+</div>
+<div class="login-box">
+    <img src="../images/default-avatar-1.png" class="avatar">
+    <h2>Login</h2>
+    <div id="error_message"></div>
+
+    <form class="login-form" action="profile.html" method="post" name="form" onsubmit="return validated()">
+        <div class="textbox">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            <input autocomplete="off" type="text" placeholder="Username" name="username">
+        </div>
+<!--
+        <div id ="username_error">Please enter a valid username</div>
+-->
+        <div class="textbox">
+            <i class="fas fa-lock" aria-hidden="true"></i>
+            <input type="password" placeholder="Password" name="password">
+        </div>
+<!--
+        <div id ="password_error">Please enter a valid password</div>
+-->
+
+        <button class="btn" type="submit">Sign In</button>
+        <p>Or <a href="register.html">Register</a> </p>
+    </form>
+</div>
+
+<canvas id="bubble"></canvas>
+
+<!--JQuery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+
+<!-- Slick Carousel-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<!--Custom Script-->
+<script src="../javascript/mainpage.js"></script>
+<script src="../javascript/home.js"></script>
+<script src="../javascript/login.js"></script>
+
+
+</body>
+</html>

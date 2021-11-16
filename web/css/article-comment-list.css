@@ -1,0 +1,258 @@
+p{
+    font-family: 'Lora', serif;
+}
+
+div.textarea {
+    background: rgba(255, 0, 0, 0);
+    padding: 15px 15px 15px 7px;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 10px auto 10px auto;
+    width: 95%;
+}
+
+div#article-comment-management{
+    text-align: right;
+    margin: 15px auto 15px auto;
+    width: 92%;
+}
+
+input.comment-management {
+    font-size: 17px;
+    padding: 5px;
+    background: rgba(255, 0, 0, 0);
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family: Lora, serif;
+}
+
+
+
+input#article-reply{
+    margin-right: 14px;
+}
+
+#comment-container{
+    padding-left:20%;
+    padding-right: 20%;
+}
+
+div.nest-container{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 55px;
+}
+div#comment-container{
+    border: 1px solid black;
+}
+
+#commentArea {
+    color: white;
+}
+
+#comment-textarea{
+    display: none;
+}
+
+.user-image{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    border: 1px solid #ffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+    background: #ffff;
+    object-fit: cover;
+    float: left;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.comment-title{
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 0;
+    color: white;
+}
+
+.comment-time{
+    font-size: 14px;
+    color: white;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.comment-content{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 80px;
+    word-break: break-word;
+}
+
+div.comment-content>p{
+    margin: 0;
+    color: white;
+    font-size: 22px;
+}
+
+p.username{
+    display: inline;
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+/* The Modal (background) for adding comment*/
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content for adding comment*/
+.popup-box {
+    margin: auto;
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 60%;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #022123;
+    padding: 15px 25px 20px 25px;
+    color: white;
+}
+p#comment-box-title {
+    color: white;
+    margin-bottom: 10px;
+}
+
+input.comment-button{
+    margin: 5px 5px 15px 5px;
+    font-size: 17px;
+    padding: 5px;
+    background: rgba(255, 0, 0, 0);
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family: Lora, serif;
+}
+input.comment-button{
+    margin: 5px;
+}
+div.comment-button{
+    margin-top: 10px;
+}
+
+/*-------- Deleting Comment Popup --------*/
+
+/* The Modal (background) for deleting comment*/
+.popup-delete {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    /*padding-top: 30%; !* Location of the box *!*/
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content for deleting comment*/
+.popup-box-delete {
+    margin: auto;
+    border: 3px solid white;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #022123;
+    padding: 15px 25px 20px 25px;
+    color: white;
+}
+
+input.reply-and-delete{
+    font-size: 17px;
+    padding: 5px;
+    background: rgba(255, 0, 0, 0);
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family: Lora, serif;
+}
+
+input.delete-current-comment {
+    margin-left: 20px;
+}
+
+input.reply{
+    margin-left: 80px;
+}
+
+div.control-buttons{
+    text-align: right;
+}
+
+input.delete-alert-button{
+    font-size: 20px;
+    padding: 4px;
+    font-style: italic;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    width: 100px;
+    background: rgba(255, 0, 0, 0);
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+#delete-comment-form{
+    display: inline-block;
+}
+
+#delete-alert-container {
+    width: 70%;
+    text-align: center;
+    margin: 7% auto auto auto;
+}
+
+p#delete-alert-message{
+    font-size: 25px;
+}
+
+p#no-article-comment{
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+input.reply-and-delete:hover,input.comment-management:hover,input.delete-alert-button:hover{
+    background: #055c66;
+}
+
+p#article-not-found, p#no-article-comment{
+    font-family: 'Lora', serif;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}

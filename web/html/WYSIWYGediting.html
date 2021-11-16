@@ -1,0 +1,82 @@
+<!--@Ethan-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>editing page</title>
+    <meta charset="UTF-8">
+    <title>editing page</title>
+    <script src="https://cdn.ckeditor.com/ckeditor5/19.1.1/classic/ckeditor.js"></script>
+    <!--fonts-->
+    <script src="https://kit.fontawesome.com/c5aba5c557.js" crossorigin="anonymous"></script>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/WYSIWYGediting.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--    <link rel="stylesheet" href="../css/style.css">-->
+</head>
+<body>
+<nav role='navigation' id="mainnav">
+    <br><br><br>
+    <ul class="gap">
+        <li><a href="posts.html">HOME</a></li>
+        <li><a href="#?">ABOUT</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+        <li><a href="register.html">REGISTER</a></li>
+    </ul>
+
+</nav>
+
+<div class="hamb">
+    <a href="#"><i class="fa fa-bars"></i></a>
+</div>
+<h1 id="head">Show your mind</h1>
+
+
+<div id="container">
+    <form method="post" action="./showEditedArticle" id="edit area">
+        <div id="set-article">
+            <label for="title">Title</label>
+            <textarea name="title" id="title" class="smalltextareas"></textarea>
+            <label for="keywords">Keywords</label>
+            <textarea name="keywords" id="keywords" class="smalltextareas"></textarea>
+            <label for="abstract">Abstract</label>
+            <textarea name="abstract" id="abstract" class="smalltextareas"></textarea>
+        </div>
+        <textarea id="editor" name="content">
+            <p>This is some sample content.</p>
+        </textarea>
+        <button type="submit" id="button"><img src="../images/submitbutton.png" height="60"/></button>
+    </form>
+</div>
+
+<canvas id="bubble"></canvas>
+
+<!--ckeditor-->
+<script>
+    ClassicEditor
+        .create(document.querySelector('#editor'))
+        .then(editor => {
+            console.log(editor);
+        })
+        .catch(error => {
+            console.error(error);
+        });
+</script>
+
+
+<!--JQuery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+<!-- Slick Carousel-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!--Custom Script-->
+<script src="../javascript/mainpage.js"></script>
+<script src="../javascript/home.js"></script>
+<script src="../javascript/profilemain.js"></script>
+</body>
+</html>
